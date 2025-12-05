@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Marisa - Produtos de limpeza"/>
+    <meta property="og:image" content="https://projeto-marisa-store.vercel.app/assets/logo.png"/>
+    <meta property="og:description" content="Os melhores preços de produto de limpeza"/>    
+    <meta property="og:site_name" content="MarisaStore"/>
+
+    <title>MarisaStore - Produtos de Limpeza</title>
+
+</head>
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+          <img
+             src="./assets/logo.png"
+             alt="Logo MarisaStore"
+             class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                MarisaStore
+        </h1>
+
+        <span class="text-white font-medium">---(54)981232459 Marisa--- <br> Maratá - Rio Grande do SUl</span><hr>
+
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Seg á Sab - 8:00 as 20:00</span>
+        </div>
+        
+     </header>
+        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nossas variedades
+        </h2>
+        <!-- Inicio Itens -->
+     <div id="menu">
+        
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <!-- Produto intem Alvejante-->
+             <div class="flex gap-2">
+                <img
+                src="./assets/alvejante.png"
+                alt="Alvejante Sem Cloro"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Alvejante - Sem Cloro</p>
+                    <p class="text-sm">Alvejante sem cloro, ideal para tecidos e superfícies delicadas. Sua fórmula especial remove manchas com eficiência, preservando cores e fibras. Produto seguro, versátil e com alto rendimento, indicado tanto para uso doméstico quanto profissional</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 21.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Alvejante sem cloro"
+                                data-price="21.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+        <!-- Produto intem alvejante -->
+             <div class="flex gap-2">
+                <img
+                src="./assets/alvejante.png"
+                alt="Alvejante COM Cloro"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Alvejante - Com Cloro</p>
+                    <p class="text-sm">Alvejante com cloro, ideal para tecidos e superfícies delicadas. Sua fórmula especial remove manchas com eficiência, preservando cores e fibras. Produto seguro, versátil e com alto rendimento, indicado tanto para uso doméstico quanto profissional.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Alvejante COM cloro"
+                                data-price="19.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+        <!-- Produto intem Detergente-->
+             <div class="flex gap-2">
+                <img
+                src="./assets/detergente.png"
+                alt="Detergente"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Detergente - Maçã</p>
+                    <p class="text-sm">Detergente lava-louças, desenvolvido para remover gorduras e sujeiras com máxima eficiência, sem agredir a pele. Fórmula suave, com alto poder de limpeza e espuma abundante, ideal para cozinhas domésticas e comerciais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Detergente - Maça"
+                                data-price="19.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+        <!-- Produto intem Detergente -->
+             <div class="flex gap-2">
+                <img
+                src="./assets/detergente.png"
+                alt="Detergente"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Detergente - Neutro</p>
+                    <p class="text-sm">Detergente lava-louças, desenvolvido para remover gorduras e sujeiras com máxima eficiência, sem agredir a pele. Fórmula suave, com alto poder de limpeza e espuma abundante, ideal para cozinhas domésticas e comerciais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Detergente - Neutro"
+                                data-price="19.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+        <!-- Produto intem Lava roupas-->
+             <div class="flex gap-2">
+                <img
+                src="./assets/lavaroupas.png"
+                alt="Lava Roupas"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Lava Roupas - Azul</p>
+                    <p class="text-sm">Lava-Roupas líquido, desenvolvido para limpar roupas com eficiência, removendo manchas e sujeiras difíceis. Proporciona frescor prolongado e cores mais vibrantes, ideal para uso doméstico e lavanderias comerciais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 21.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Lava Roupas"
+                                data-price="21.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+         <!-- Produto intem Lava roupas-->
+             <div class="flex gap-2">
+                <img
+                src="./assets/lavaroupas.png"
+                alt="Lava Roupas"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Lava Roupas - Coco</p>
+                    <p class="text-sm">Lava-Roupas líquido, desenvolvido para limpar roupas com eficiência, removendo manchas e sujeiras difíceis. Proporciona frescor prolongado e cores mais vibrantes, ideal para uso doméstico e lavanderias comerciais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 21.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Lava Roupas"
+                                data-price="21.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+        <!-- Produto intem Limpador -->
+             <div class="flex gap-2">
+                <img
+                src="./assets/limpador.png"
+                alt="Limpador"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Limpador Perfumado - Pinho</p>
+                    <p class="text-sm">Limpador perfumado, desenvolvido para limpeza geral de superfícies, eliminando sujeiras e gorduras com eficiência. Proporciona perfume agradável e duradouro, deixando o ambiente limpo, fresco e perfumado. Ideal para uso doméstico e comercial.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Limpador Perfumado - PINHO - "
+                                data-price="19.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+        <!-- Produto intem Limpador -->
+             <div class="flex gap-2">
+                <img
+                src="./assets/limpador.png"
+                alt="Limpador"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Limpador Perfumado - Eucalipto</p>
+                    <p class="text-sm">Limpador perfumado, desenvolvido para limpeza geral de superfícies, eliminando sujeiras e gorduras com eficiência. Proporciona perfume agradável e duradouro, deixando o ambiente limpo, fresco e perfumado. Ideal para uso doméstico e comercial.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Limpador Perfumado - Eucalipto - "
+                                data-price="19.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item --> 
+         
+         <!-- Produto intem sabonete liquidos-->
+             <div class="flex gap-2">
+                <img
+                src="./assets/saboneteliquido.png"
+                alt="Lava Roupas"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Sabonete Líquido - Frutas vermelhas</p>
+                    <p class="text-sm">Sabonete líquido, ideal para limpeza profunda da pele, removendo impurezas e oleosidade com eficácia. Proporciona sensação de frescor, espuma cremosa e perfume agradável, garantindo pele limpa, macia e hidratada. Produto concentrado, indicado para uso diário em ambientes domésticos e comerciais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 39.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Sabonete liquido frutas vermelhas"
+                                data-price="39.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+        <!-- Fim Produto item -->
+
+        <!-- Produto intem sabonete liquidos-->
+             <div class="flex gap-2">
+                <img
+                src="./assets/saboneteliquido.png"
+                alt="Lava Roupas"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+
+                <div>
+                    <p class="font-bold">Sabonete Líquido - Erva doce</p>
+                    <p class="text-sm">Sabonete líquido, ideal para limpeza profunda da pele, removendo impurezas e oleosidade com eficácia. Proporciona sensação de frescor, espuma cremosa e perfume agradável, garantindo pele limpa, macia e hidratada. Produto concentrado, indicado para uso diário em ambientes domésticos e comerciais.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 39.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Sabonete liquido ERVA DOCE"
+                                data-price="39.99">
+
+                            <i class="fas fa-cart-plus text-lg text-white"></i>
+                            </button>
+                    </div>
+                </div>
+             </div>
+
+    <!-- Modal cart-->
+     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+     id="cart-modal"
+     >
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2> 
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Seu nome, endereço para entrega e complemento:</p>
+            <input
+            type="text"
+            placeholder="Ex: Renan Rodrigues, São pedro , 25 de julho, 139 nos fundos"
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"/>
+            <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo!!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+     </div>
+    <!-- Modal cart-->
+
+    <!-- Button cart Store-->
+    <footer class="w-full bg-zinc-800 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+       <button class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn">
+        (<span id="cart-count">0</span>)
+        Veja meu carrinho 
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- Fim Button cart Store-->
+    </main>
+     </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
