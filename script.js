@@ -170,7 +170,8 @@ return;
 
         const phone = "54981232459"
 
-    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_black")
+    window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
+
 
     cart = [];
     updateCartModal();
