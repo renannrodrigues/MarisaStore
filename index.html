@@ -35,7 +35,7 @@
         <span class="text-white font-medium">---(54)981232459 Marisa--- <br> Maratá - Rio Grande do SUl</span><hr>
 
         <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-        <span class="text-white font-medium">Seg á Sab - 8:00 as 20:00</span>
+        <span class="text-white font-medium">Seg á Sab - 8:00 as 22:00</span>
         </div>
         
      </header>
@@ -315,6 +315,28 @@
             id="address"
             class="w-full border-2 p-1 rounded my-1"/>
             <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo!!</p>
+            <p class="font-bold mt-4">Forma de pagamento:</p>
+
+<select id="payment-method" class="w-full border-2 p-2 rounded my-1">
+    <option value="">Selecione...</option>
+    <option value="Pix">Pix</option>
+    <option value="Dinheiro">Dinheiro</option>
+</select>
+
+<p class="text-red-600 hidden" id="payment-warn">Selecione a forma de pagamento!!</p>
+
+
+<!-- Troco -->
+<div id="troco-container" class="hidden">
+    <p class="font-bold mt-4">Troco para quanto?</p>
+    <input 
+        type="number" 
+        id="troco-input" 
+        placeholder="Ex: 100" 
+        class="w-full border-2 p-2 rounded my-1"
+    />
+</div>
+
 
             <div class="flex items-center justify-between mt-5 w-full">
                 <button id="close-modal-btn">Fechar</button>

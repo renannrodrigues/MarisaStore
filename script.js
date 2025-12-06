@@ -8,6 +8,11 @@ const cartCounter = document.getElementById("cart-count")
 const closeModalBtn = document.getElementById("close-modal-btn")
 const addressInput = document.getElementById("address")
 const addressWarn = document.getElementById("address-warn")
+const paymentSelect = document.getElementById("payment-method");
+const trocoContainer = document.getElementById("troco-container");
+const trocoInput = document.getElementById("troco-input");
+const pixContainer = document.getElementById("pix-container");
+
 
 let cart= [];
 
@@ -131,52 +136,79 @@ addressInput.addEventListener("input", function(event){
 })
 
 // finalizar pedido
-checkoutBtn.addEventListener("click", function(){
+checkoutBtn.addEventListener("click", function () {
     const isOpen = checkLojaOpen();
-    if(!isOpen){
-       Toastify({
-        text: "Ops a loja está fechada",
-        duration: 3000,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-        background: "#ef4444",
-        },
+    if (!isOpen) {
+        Toastify({
+            text: "Ops a loja está fechada",
+            duration: 3000,
+            close: true,
+            gravity: "top",
+            position: "right",
+            style: { background: "#ef4444" },
         }).showToast();
-return;
-    }
-
-
-
-    if(cart.length === 0) return;
-    if(addressInput.value === ""){
-        addressWarn.classList.remove("hidden")
-        addressInput.classList.add("border-red-500")
         return;
     }
-    
-    //Enviar o pedido para api whats
+
+    if (cart.length === 0) return;
+
+    if (addressInput.value === "") {
+        addressWarn.classList.remove("hidden");
+        addressInput.classList.add("border-red-500");
+        return;
+    }
+
+    const paymentMethod = paymentSelect.value;
+
+    if (paymentMethod === "") {
+        document.getElementById("payment-warn").classList.remove("hidden");
+        return;
+    }
+
+    // Texto do pagamento
+    let pagamentoTexto = `💳 *Forma de pagamento:* ${paymentMethod}\n`;
+
+    if (paymentMethod === "Pix") {
+        pagamentoTexto += `🔑 *Chave Pix:* 54981232459\n`;
+    }
+
+    if (paymentMethod === "Dinheiro") {
+        const trocoValue = trocoInput.value.trim();
+        pagamentoTexto += trocoValue 
+            ? `💵 *Troco para:* R$${trocoValue}\n`
+            : `💵 *Troco:* Não informado\n`;
+    }
+
+    // Itens do carrinho
     const cartItems = cart.map((item) => {
-    const itemTotal = (item.price * item.quantity).toFixed(2);
-    return `${item.name} - Qtd: ${item.quantity} - Total: R$${itemTotal} | `;
-    }).join("");
-    const totalGeral = cart.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
+        const itemTotal = (item.price * item.quantity).toFixed(2);
+        return `• *${item.name}*\n  Quantidade: ${item.quantity}\n  Subtotal: R$${itemTotal}\n`;
+    }).join("\n");
 
+    const totalGeral = cart
+        .reduce((sum, item) => sum + item.price * item.quantity, 0)
+        .toFixed(2);
 
+    const message = encodeURIComponent(
+`🛒 *NOVO PEDIDO - MARISA STORE*
 
-        const message = encodeURIComponent( `${cartItems}\nTOTAL GERAL: R$${totalGeral}\nEndereço: ${addressInput.value}`);
+📦 *Itens do pedido:*
+${cartItems}
 
-        const phone = "54981232459"
+💰 *Total geral:* R$${totalGeral}
 
-    window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
+${pagamentoTexto}
+🏠 *Endereço:* ${addressInput.value}
 
+✅ Pedido enviado via site`
+    );
+
+    const phone = "54981232459";
+    window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
 
     cart = [];
     updateCartModal();
-
-})
+});
 
 // verigicar a hora e manipular o card horario
 function checkLojaOpen(){
@@ -196,3 +228,21 @@ if(isOpen){
     spanItem.classList.remove("bg-green-600")
     spanItem.classList.add("bg-red-500")
 }
+
+paymentSelect.addEventListener("change", () => {
+    if (paymentSelect.value === "Dinheiro") {
+        trocoContainer.classList.remove("hidden");
+        pixContainer.classList.add("hidden");
+        trocoInput.value = "";
+    } 
+    else if (paymentSelect.value === "Pix") {
+        pixContainer.classList.remove("hidden");
+        trocoContainer.classList.add("hidden");
+        trocoInput.value = "";
+    } 
+    else {
+        trocoContainer.classList.add("hidden");
+        pixContainer.classList.add("hidden");
+        trocoInput.value = "";
+    }
+});
