@@ -137,6 +137,7 @@ addressInput.addEventListener("input", function(event){
 
 // finalizar pedido
 checkoutBtn.addEventListener("click", function () {
+    gtag('event', 'finalizar_pedido'); // ✅ GA4 registra o clique
     const isOpen = checkLojaOpen();
     if (!isOpen) {
         Toastify({
