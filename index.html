@@ -3,401 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/output.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Marisa - Produtos de limpeza"/>
-    <meta property="og:image" content="https://marisa-store.vercel.app/assets/logo.png"/>
-    <meta property="og:description" content="Os melhores preços de produto de limpeza"/>    
-    <meta property="og:site_name" content="MarisaStore"/>
-
-    <link rel="stylesheet" href="./styles/output.css" />
-
     <title>MarisaStore - Produtos de Limpeza</title>
-     <link rel="icon" type="image/png" href="./assets/logo.png">
-
-</head>
-<body>
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
-        <div class="w-full h-full flex flex-col justify-center items-center">
-          <img
-             src="./assets/logo.png"
-             alt="Logo MarisaStore"
-             class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-            />
-            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
-                MarisaStore
-        </h1>
-
-        <span class="text-white font-medium">----(54)981232459 Marisa---- <br><strong>ENTREGAMOS NA SUA CASA</strong></span><hr>
-
-        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-        <span class="text-white font-medium">Seg á Sab - 8:00 as 22:00</span>
-        </div>
-        
-     </header>
-        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
-        Conheça nossas variedades
-        </h2>
-        <!-- Inicio Itens -->
-     <div id="menu">
-        
-        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 px-2 mb-16">
-
-            <!-- Produto intem Alvejante-->
-             <div class="flex gap-2">
-                <img
-                src="./assets/semcloro.png"
-                alt="Alvejante Sem Cloro"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Alvejante - 5 Litros - Sem Cloro</p>
-                    <p class="text-sm">Alvejante sem cloro, ideal para tecidos e superfícies delicadas. Sua fórmula especial remove manchas com eficiência, preservando cores e fibras. Produto seguro, versátil e com alto rendimento, indicado tanto para uso doméstico quanto profissional</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 21.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Alvejante sem cloro"
-                                data-price="21.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-
-        <!-- Produto intem alvejante -->
-             <div class="flex gap-2">
-                <img
-                src="./assets/comcloro.png"
-                alt="Alvejante COM Cloro"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Alvejante - 5 Litros - Com Cloro</p>
-                    <p class="text-sm">Alvejante com cloro, ideal para tecidos e superfícies delicadas. Sua fórmula especial remove manchas com eficiência, preservando cores e fibras. Produto seguro, versátil e com alto rendimento, indicado tanto para uso doméstico quanto profissional.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 17.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Alvejante COM cloro"
-                                data-price="17.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-
-        
-
-         <!-- Produto intem amaciante -->
-             <div class="flex gap-2">
-                <img
-                src="./assets/amaciantecaricia.png"
-                alt="Alvejante COM Cloro"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Amaciante - 5 Litros - Caricia</p>
-                    <p class="text-sm">Amaciante Carícia, desenvolvido para deixar as roupas macias e perfumadas. Mantém cores vivas e proporciona frescor duradouro, ideal para uso doméstico e lavanderias comerciais.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 19.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Amaciante - Caricia -"
-                                data-price="19.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-
-        <!-- Produto intem amaciante -->
-             <div class="flex gap-2">
-                <img
-                src="./assets/amaciantemundoazul.png"
-                alt="Alvejante COM Cloro"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Amaciante - 5 Litros - Mundo Azul</p>
-                    <p class="text-sm">Amaciante Mundo azul, desenvolvido para deixar as roupas macias e perfumadas. Mantém cores vivas e proporciona frescor duradouro, ideal para uso doméstico e lavanderias comerciais.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 19.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Amaciante - Mundo Azul -"
-                                data-price="19.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-         
-        <!-- Produto intem Detergente -->
-             <div class="flex gap-2">
-                <img
-                src="./assets/detergentelavaroupasneutro.png"
-                alt="Detergente"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Detergente - 5 Litros - Neutro</p>
-                    <p class="text-sm">Detergente lava-louças, desenvolvido para remover gorduras e sujeiras com máxima eficiência, sem agredir a pele. Fórmula suave, com alto poder de limpeza e espuma abundante, ideal para cozinhas domésticas e comerciais.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 18.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Detergente - Neutro"
-                                data-price="18.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-
-        <!-- Produto intem Lava roupas-->
-             <div class="flex gap-2">
-                <img
-                src="./assets/lavaroupas.png"
-                alt="Lava Roupas"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Lava Roupas - 5 Litros  - Azul</p>
-                    <p class="text-sm">Lava-Roupas líquido, desenvolvido para limpar roupas com eficiência, removendo manchas e sujeiras difíceis. Proporciona frescor prolongado e cores mais vibrantes, ideal para uso doméstico e lavanderias comerciais.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 21.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Lava Roupas"
-                                data-price="21.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-
-         <!-- Produto intem Lava roupas
-             <div class="flex gap-2">
-                <img
-                src="./assets/lavaroupas.png"
-                alt="Lava Roupas"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Lava Roupas - Coco</p>
-                    <p class="text-sm">Lava-Roupas líquido, desenvolvido para limpar roupas com eficiência, removendo manchas e sujeiras difíceis. Proporciona frescor prolongado e cores mais vibrantes, ideal para uso doméstico e lavanderias comerciais.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 21.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Lava Roupas"
-                                data-price="21.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-         Fim Produto item -->
-
-        <!-- Produto intem Limpador -->
-             <div class="flex gap-2">
-                <img
-                src="./assets/limpadorfloral.png"
-                alt="Limpador"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Limpador Perfumado - 5 Litros - Floral</p>
-                    <p class="text-sm">Limpador perfumado, desenvolvido para limpeza geral de superfícies, eliminando sujeiras e gorduras com eficiência. Proporciona perfume agradável e duradouro, deixando o ambiente limpo, fresco e perfumado. Ideal para uso doméstico e comercial.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 17.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Limpador Perfumado - Floral - "
-                                data-price="17.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-
-        <!-- Produto intem Limpador -->
-             <div class="flex gap-2">
-                <img
-                src="./assets/limpadorkaiak.png"
-                alt="Limpador"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Limpador Perfumado - 5 Litros - Kaiak</p>
-                    <p class="text-sm">Limpador perfumado, desenvolvido para limpeza geral de superfícies, eliminando sujeiras e gorduras com eficiência. Proporciona perfume agradável e duradouro, deixando o ambiente limpo, fresco e perfumado. Ideal para uso doméstico e comercial.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 17.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Limpador Perfumado - Kaiak - "
-                                data-price="17.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item --> 
-         
-         <!-- Produto intem sabonete liquidos-->
-             <div class="flex gap-2">
-                <img
-                src="./assets/saboneteliquido.png"
-                alt="Lava Roupas"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Sabonete Líquido - 5 Litros - Frutas vermelhas</p>
-                    <p class="text-sm">Sabonete líquido, ideal para limpeza profunda da pele, removendo impurezas e oleosidade com eficácia. Proporciona sensação de frescor, espuma cremosa e perfume agradável, garantindo pele limpa, macia e hidratada. Produto concentrado, indicado para uso diário em ambientes domésticos e comerciais.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 39.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Sabonete liquido frutas vermelhas"
-                                data-price="39.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-        <!-- Fim Produto item -->
-
-        <!-- Produto intem sabonete liquidos-->
-             <div class="flex gap-2">
-                <img
-                src="./assets/saboneteliquido.png"
-                alt="Lava Roupas"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class="font-bold">Sabonete Líquido - 5 Litros - Erva doce</p>
-                    <p class="text-sm">Sabonete líquido, ideal para limpeza profunda da pele, removendo impurezas e oleosidade com eficácia. Proporciona sensação de frescor, espuma cremosa e perfume agradável, garantindo pele limpa, macia e hidratada. Produto concentrado, indicado para uso diário em ambientes domésticos e comerciais.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 39.99</p>
-                            <button 
-                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                                data-name="Sabonete liquido ERVA DOCE"
-                                data-price="39.99">
-
-                            <i class="fas fa-cart-plus text-lg text-white"></i>
-                            </button>
-                    </div>
-                </div>
-             </div>
-
-    <!-- Modal cart-->
-     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
-     id="cart-modal"
-     >
-
-        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2> 
-
-            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
-
-            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
-
-            <p class="font-bold mt-4">Seu nome, endereço para entrega e complemento:</p>
-            <input
-            type="text"
-            placeholder="Ex: Renan Rodrigues, São pedro , 25 de julho, 139 nos fundos"
-            id="address"
-            class="w-full border-2 p-1 rounded my-1"/>
-            <p class="text-red-600 hidden" id="address-warn">Digite seu endereço completo!!</p>
-            <p class="font-bold mt-4">Forma de pagamento:</p>
-
-<select id="payment-method" class="w-full border-2 p-2 rounded my-1">
-    <option value="">Selecione...</option>
-    <option value="Pix">Pix</option>
-    <option value="Dinheiro">Dinheiro</option>
-</select>
-
-<p class="text-red-600 hidden" id="payment-warn">Selecione a forma de pagamento!!</p>
-
-
-<!-- Troco -->
-<div id="troco-container" class="hidden">
-    <p class="font-bold mt-4">Troco para quanto?</p>
-    <input 
-        type="number" 
-        id="troco-input" 
-        placeholder="Ex: 100" 
-        class="w-full border-2 p-2 rounded my-1"
-    />
-</div>
-
-
-            <div class="flex items-center justify-between mt-5 w-full">
-                <button id="close-modal-btn">Fechar</button>
-                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
-            </div>
-        </div>
-     </div>
-    <!-- Modal cart-->
-
-    <!-- Button cart Store-->
-    <footer class="w-full bg-zinc-800 py-3 fixed bottom-0 z-40 flex items-center justify-center">
-       <button class="flex items-center gap-2 text-white font-bold"
-        id="cart-btn">
-        (<span id="cart-count">0</span>)
-        Veja meu carrinho 
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-        </button>
-    </footer>
-    <!-- Fim Button cart Store-->
-    </main>
-
-     </div>
-     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRD6E8X834"></script>
+    
+    <!-- Google Analytics G4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-JRD6E8X834');
+        gtag('config', 'G-XXXXXXXXXX');
     </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-cyan-50 via-blue-50 to-white">
+    
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="MarisaStore Logo" class="h-16 w-auto">
+                </div>
+                
+                <button onclick="toggleCart()" class="relative gradient-btn text-white px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        Carrinho
+                    </span>
+                    <span id="cart-count" class="hidden absolute -top-2 -right-2 bg-pink-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-<script src="script.js"></script>
+    <!-- Hero Section -->
+    <section class="py-20 px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-300/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-300/20 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto relative">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="flex-1 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        Produtos de Limpeza de Qualidade
+                    </span>
+                    
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Sua casa merece o <span class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">melhor cuidado</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
+                        Encontre os melhores produtos de limpeza da linha Lírios com preços especiais. Qualidade garantida para deixar sua casa brilhando!
+                    </p>
 
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="document.getElementById('produtos').scrollIntoView({behavior: 'smooth'})" class="gradient-btn text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all">
+                            Ver Produtos
+                        </button>
+                        <a href="https://wa.me/5554981232459?text=Olá! Gostaria de fazer um pedido." target="_blank" class="bg-white border-2 border-cyan-500 text-cyan-600 px-8 py-4 rounded-full font-semibold hover:bg-cyan-50 transition-all">
+                            Fazer Pedido
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-1 flex justify-center animate-float">
+                    <img src="images/logo.png" alt="MarisaStore Logo" class="w-80 h-80 object-contain">
+                </div>
+            </div>
+
+            <!-- Trust badges -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-center gap-4 bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900">Entrega Rápida</h3>
+                        <p class="text-sm text-gray-600">Na região de Salvador do Sul</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-4 bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900">Qualidade Garantida</h3>
+                        <p class="text-sm text-gray-600">Produtos de primeira linha</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-4 bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900">Preços Especiais</h3>
+                        <p class="text-sm text-gray-600">Melhores condições do mercado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-20 bg-white/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-14">
+                <span class="inline-block bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Nossos Produtos
+                </span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Linha Completa Lírios</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Produtos de alta qualidade para todas as necessidades de limpeza da sua casa. Adicione ao carrinho e finalize seu pedido!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gradient-to-br from-cyan-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-cyan-100 text-cyan-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Fale Conosco
+                </span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
+                <p class="text-gray-600 max-w-xl mx-auto">
+                    Faça seu pedido pelo WhatsApp e receba atendimento personalizado. Estamos prontos para ajudar você!
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Telefone / WhatsApp</h3>
+                                <p class="text-gray-600">(54) 98123-2459</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Horário de Atendimento</h3>
+                                <p class="text-gray-600">Segunda a Sábado, 8h às 18h</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-1">Região de Entrega</h3>
+                                <p class="text-gray-600">Salvador do Sul e região</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gradient-btn rounded-2xl p-8 text-white text-center">
+                        <svg class="w-16 h-16 mx-auto mb-4 opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                        <h3 class="text-2xl font-bold mb-2">Faça seu pedido agora!</h3>
+                        <p class="opacity-90 mb-6">Clique no botão e fale direto conosco</p>
+                        <a href="https://wa.me/5554981232459?text=Olá! Gostaria de fazer um pedido na MarisaStore." target="_blank" class="inline-flex items-center gap-2 bg-white text-cyan-600 px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Abrir WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="flex items-center gap-4">
+                    <img src="images/logo.png" alt="MarisaStore Logo" class="h-16 w-auto brightness-0 invert">
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="text-white/60 text-sm mb-3">© 2026 MarisaStore - Produtos de Limpeza</p>
+                    <div class="flex items-center justify-center md:justify-end gap-2">
+                        <span class="text-white/80 text-sm">Criado e planejado por</span>
+                        <a href="https://portfolio-renan-dev.vercel.app/" target="_blank" rel="noopener noreferrer" class="renandev-link inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 rounded-full font-semibold text-sm hover:shadow-lg hover:scale-105 transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                            RenanDev
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5554981232459?text=Olá! Vim pelo site da MarisaStore." target="_blank" class="whatsapp-float">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full md:w-[28rem] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50 overflow-y-auto">
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-gray-900">Seu Carrinho</h2>
+                <button onclick="toggleCart()" class="text-gray-500 hover:text-gray-800 text-3xl leading-none">×</button>
+            </div>
+            
+            <div id="cart-items" class="space-y-4 mb-6"></div>
+            
+            <div class="border-t pt-4 mb-6">
+                <div class="flex justify-between text-xl font-bold mb-6">
+                    <span>Total:</span>
+                    <span class="text-cyan-600" id="cart-total">R$ 0,00</span>
+                </div>
+                
+                <div class="mb-4">
+                    <p class="font-medium mb-3 text-gray-900">Forma de Pagamento:</p>
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="selectPayment('dinheiro')" id="btn-dinheiro" class="border-2 border-gray-300 p-4 rounded-xl hover:border-cyan-500 transition-all text-center">
+                            <div class="text-2xl mb-1">💵</div>
+                            <span class="font-medium">Dinheiro</span>
+                        </button>
+                        <button onclick="selectPayment('pix')" id="btn-pix" class="border-2 border-gray-300 p-4 rounded-xl hover:border-cyan-500 transition-all text-center">
+                            <div class="text-2xl mb-1">📱</div>
+                            <span class="font-medium">PIX</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="troco-section" class="hidden mb-4 bg-gray-50 p-4 rounded-xl">
+                    <label class="block text-sm font-medium mb-2">Precisa de troco? Para quanto?</label>
+                    <div class="relative">
+                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">R$</span>
+                        <input type="text" id="troco-input" placeholder="Ex: 50,00" class="w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" oninput="calculateChange()">
+                    </div>
+                    <p id="troco-result" class="text-sm mt-2 text-gray-600"></p>
+                </div>
+                
+                <div id="pix-section" class="hidden mb-4 bg-gray-50 p-4 rounded-xl">
+                    <p class="text-sm font-medium mb-3 text-center">Chave PIX (Telefone):</p>
+                    <div class="bg-white p-4 rounded-lg flex items-center justify-between gap-2">
+                        <code class="text-lg font-mono text-cyan-600">54981232459</code>
+                        <button onclick="copyPix()" id="copy-btn" class="gradient-btn text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90">
+                            Copiar
+                        </button>
+                    </div>
+                    <div class="text-center pt-4 border-t mt-4">
+                        <p class="text-sm text-gray-600 mb-1">Valor a transferir:</p>
+                        <p class="text-2xl font-bold text-cyan-600" id="pix-total">R$ 0,00</p>
+                    </div>
+                </div>
+                
+                <button 
+                    onclick="finishOrder()" 
+                    id="finish-btn" 
+                    class="w-full gradient-btn text-white py-4 rounded-full font-semibold hover:opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2" 
+                    disabled>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                    Finalizar Pedido via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
