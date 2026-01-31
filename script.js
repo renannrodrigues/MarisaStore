@@ -6,7 +6,7 @@ const products = [
         name: "Alvejante com Cloro Lírios",
         description: "Alvejante potente para roupas brancas",
         category: "Alvejante",
-        prices: { "1L": 9.90, "5L": 17.90 },
+        prices: {"5L": 17.90 },
         image: "images/alvejante-cloro.png"
     },
     {
@@ -14,7 +14,7 @@ const products = [
         name: "Alvejante Sem Cloro Lírios",
         description: "Alvejante suave para roupas coloridas",
         category: "Alvejante",
-        prices: { "1L": 12.00, "5L": 21.90 },
+        prices: {"5L": 21.90 },
         image: "images/alvejante-sem-cloro.png"
     },
     {
@@ -22,7 +22,7 @@ const products = [
         name: "Amaciante Lírios Carícia",
         description: "Amaciante com fragrância suave e duradoura",
         category: "Amaciante",
-        prices: { "1L": 11.90, "5L": 19.99 },
+        prices: {"5L": 19.99 },
         image: "images/amaciante-caricia.png"
     },
     {
@@ -30,7 +30,7 @@ const products = [
         name: "Amaciante Lírios Mundo Azul",
         description: "Amaciante refrescante com perfume marcante",
         category: "Amaciante",
-        prices: { "1L": 11.90, "5L": 19.99 },
+        prices: {"5L": 19.99 },
         image: "images/amaciante-mundo-azul.png"
     },
     {
@@ -38,7 +38,7 @@ const products = [
         name: "Detergente Lava Louça Lírios",
         description: "Detergente neutro de alta performance",
         category: "Detergente",
-        prices: { "1L": 11.50, "5L": 18.90 },
+        prices: {"5L": 18.90 },
         image: "images/detergente-lava-louca.png"
     },
     {
@@ -46,7 +46,7 @@ const products = [
         name: "Lava Roupas Lírios",
         description: "Lava roupas concentrado e eficiente",
         category: "Lava Roupas",
-        prices: { "1L": 11.50, "5L": 21.99 },
+        prices: {"5L": 21.99 },
         image: "images/lava-roupas.png"
     },
     {
@@ -54,7 +54,7 @@ const products = [
         name: "Limpador Perfumado Floral",
         description: "Limpador multiuso com fragrância floral",
         category: "Limpador",
-        prices: { "1L": 10.90, "5L": 17.99 },
+        prices: {"5L": 17.99 },
         image: "images/limpador-floral.png"
     },
     {
@@ -62,7 +62,7 @@ const products = [
         name: "Limpador Perfumado Kaiak",
         description: "Limpador multiuso várias fragrâncias",
         category: "Limpador",
-        prices: { "1L": 10.90, "5L": 17.99 },
+        prices: {"5L": 17.99 },
         image: "images/limpador-kaiak.png"
     },
     {
