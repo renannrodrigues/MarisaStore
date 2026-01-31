@@ -22,7 +22,7 @@ const products = [
         name: "Amaciante Lírios Carícia",
         description: "Amaciante com fragrância suave e duradoura",
         category: "Amaciante",
-        prices: {"5L": 19.99 },
+        prices: {"5L": 18.99 },
         image: "images/amaciante-caricia.png"
     },
     {
