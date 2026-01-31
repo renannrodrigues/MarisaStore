@@ -30,7 +30,7 @@ const products = [
         name: "Amaciante Lírios Mundo Azul",
         description: "Amaciante refrescante com perfume marcante",
         category: "Amaciante",
-        prices: {"5L": 19.99 },
+        prices: {"5L": 18.99 },
         image: "images/amaciante-mundo-azul.png"
     },
     {
