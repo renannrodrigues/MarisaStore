@@ -67,22 +67,6 @@ const products = [
     },
     {
         id: 9,
-        name: "Odorizador de Ambiente",
-        description: "Odorizador de ambiente com fragrância duradoura",
-        category: "Odorizador",
-        prices: { "1L": 15.90, "350ML": 5.90 },
-        image: "images/perfumador-ambiente.png"
-    },
-    {
-        id: 10,
-        name: "Pretinho",
-        description: "De brilho nos pneus do seu carro ou moto",
-        category: "Pretinho",
-        prices: { "1L": 40.00, "5L": 170.00, "500ML": 30.00 },
-        image: "images/preteador.png"
-    },
-    {
-        id: 11,
         name: "Sabonete Líquido",
         description: "Sabonete líquido para uso doméstico",
         category: "Sabonete",
